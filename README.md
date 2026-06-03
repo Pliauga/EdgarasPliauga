@@ -28,19 +28,6 @@ I have 4+ years of experience across database administration, revenue operations
 
 ---
 
-## 💼 Experience Highlights
-
-- **Front Office Agent · Motel One London** *(Feb–May 2026)*  
-  Compiled daily RevPAR/ADR/occupancy reports for senior management. Monitored rate data across distribution channels and reconciled high-volume transactions with 100% accuracy.
-
-- **Aviation Security & Compliance Officer · Heathrow Airport** *(Sept 2023–Oct 2024)*  
-  Operated advanced threat-detection systems in a strictly regulated environment. Maintained 100% compliance with UK aviation security regulations with zero reportable incidents.
-
-- **Database Administrator · Silverbird** *(2020–2023)*  
-  Designed and maintained relational databases for multiple clients. Wrote SQL (JOINs, aggregations, subqueries) to extract datasets directly informing growth strategy. Authored data governance policies from scratch.
-
----
-
 ## 📈 Currently Learning
 
 - 🐍 Python for data analysis (Pandas, NumPy)
