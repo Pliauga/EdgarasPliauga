@@ -1,45 +1,37 @@
-# Hi, I'm Edgaras 👋
+# Hi, I'm Edgaras
 
-**Data & Revenue Analyst** based in London, UK — turning messy data into clear decisions.
+**Data & Revenue Analyst** based in London, UK.
 
-I have 4+ years of experience across database administration, revenue operations, and regulated environments. I build things with SQL, Power BI, and Excel, and I'm currently expanding into Python and version-controlled data workflows.
-
----
-
-## 🛠 Tech Stack
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel%20Advanced-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![Power Query](https://img.shields.io/badge/Power%20Query-742774?style=flat-square&logo=microsoft&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+I have 4+ years of experience across database administration, revenue operations, and regulated environments. I specialize in taking raw, unstructured operational data and turning it into clean relational schemas, automated reporting pipelines, and commercial dashboards.
 
 ---
 
-## 📂 Projects
+## Tech Stack & Skills
 
-> *Projects coming soon — currently building out this portfolio.*
-
-| Project | Description | Tools |
-|--------|-------------|-------|
-| 🏨 Hotel Revenue Dashboard | Occupancy, ADR & RevPAR analysis using real-world hospitality data | SQL · Power BI |
-| 🗃️ Database Governance Framework | Data entry standards, validation rules & compliance documentation | SQL · Excel |
-| 📊 KPI Reporting Pipeline | Automated performance reporting pipeline from raw data to insight | Power Query · Excel |
+* **SQL & Warehousing:** PostgreSQL, MS SQL Server, Dimensional Modeling (Star Schema)
+* **Analytics Engineering:** dbt (Core), Data Quality Testing, Git / GitHub
+* **BI & Reporting:** Power BI, Advanced Excel (Power Query, Data Modeling)
+* **Scripting & Data Science:** Python (`pandas`, `numpy`, `matplotlib`)
 
 ---
 
-## 📈 Currently Learning
+## Featured Projects
 
-- 🐍 Python for data analysis (Pandas, NumPy)
-- 🗄️ PostgreSQL deeper dive
-- 📦 Git & version control for data projects
-- 📊 Building end-to-end portfolio projects
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[ONS BICS Analytics Pipeline](https://github.com/Pliauga/uk-macro-dbt-pipeline)** | End-to-end dbt & PostgreSQL pipeline analyzing ONS survey data on UK business confidence, energy inflation, and labor costs. Includes automated schema tests and window function queries. | SQL · dbt · PostgreSQL · Python |
+| **Hotel Revenue Dashboard** | Commercial revenue analysis tracking Occupancy, ADR, and RevPAR trends using hospitality data. | SQL · Power BI |
+| **KPI Reporting Pipeline** | Automated data ingestion pipeline transforming raw, multi-source spreadsheets into clean executive dashboards. | Power Query · Excel |
+| **Database Governance Framework** | Data entry standards, schema validation rules, and compliance documentation built for regulated operational environments. | SQL · Excel |
+
+---
+
+## 🎯 What I'm Currently Focused On
+
+* 🚀 Advanced dbt modeling patterns and cloud data warehousing (Snowflake).
+* 🐍 Python automation for revenue forecasting and financial reporting.
+* 🏙️ Connecting with the London Data & FinTech community.
 
 ---
 
-## 📫 Get in Touch
-
-- 📧 EdPliauga@gmail.com  
-- 📍 London, UK
-
----
+📫 **Connect with me:** [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN) | [Email](mailto:your.email@example.com)
