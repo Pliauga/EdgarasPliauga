@@ -26,12 +26,12 @@ I have 4+ years of experience across database administration, revenue operations
 
 ---
 
-## 🎯 What I'm Currently Focused On
+## What I'm Currently Focused On
 
-* 🚀 Advanced dbt modeling patterns and cloud data warehousing (Snowflake).
-* 🐍 Python automation for revenue forecasting and financial reporting.
-* 🏙️ Connecting with the London Data & FinTech community.
+* Advanced dbt modeling patterns and cloud data warehousing (Snowflake).
+* Python automation for revenue forecasting and financial reporting.
+* Connecting with the London Data & FinTech community.
 
 ---
 
-📫 **Connect with me:** [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN) | [Email](mailto:your.email@example.com)
+**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](mailto:EdPliauga@gmail.com)
