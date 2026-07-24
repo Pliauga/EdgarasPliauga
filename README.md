@@ -19,8 +19,8 @@ I have 4+ years of experience across database administration, revenue operations
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| **[ONS BICS Analytics Pipeline](https://github.com/Pliauga/uk-macro-dbt-pipeline)** | End-to-end dbt & PostgreSQL pipeline analyzing ONS survey data on UK business confidence, energy inflation, and labor costs. Includes automated schema tests and window function queries. | SQL · dbt · PostgreSQL · Python |
-| **Hotel Revenue Dashboard** | Commercial revenue analysis tracking Occupancy, ADR, and RevPAR trends using hospitality data. | SQL · Power BI |
+| **[ONS BICS Analytics Pipeline](https://github.com/Pliauga/uk-macro-dbt-pipeline)** | End-to-end dbt & PostgreSQL pipeline analysing ONS survey data on UK business confidence, energy inflation, and labor costs. Includes automated schema tests and window function queries. | SQL · dbt · PostgreSQL · Python |
+| **[UK HM Land Registry - dbt & Postgres Pipeline](https://github.com/Pliauga/hm-land-registry-dbt)** | dbt & PostgreSQL pipeline analysing UK HM Land Registry (Covering 2020-2026 Property sales)
 | **KPI Reporting Pipeline** | Automated data ingestion pipeline transforming raw, multi-source spreadsheets into clean executive dashboards. | Power Query · Excel |
 | **Database Governance Framework** | Data entry standards, schema validation rules, and compliance documentation built for regulated operational environments. | SQL · Excel |
 
