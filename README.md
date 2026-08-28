@@ -18,7 +18,8 @@ I bring 4+ years of background across database administration, analytics enginee
 ## Featured Projects
 
 | Project | Description | Tech Stack |
-| :--- | :--- | :--- |
+| --- | --- | --- |
+| **[Agentic IAM Guardian](https://github.com/Pliauga/agentic-iam-guardian)** | AI-driven IAM security assistant automating privilege audits, policy analysis, and zero-trust policy enforcement across cloud infrastructure. | AWS · IAM · Python · Terraform |
 | **[SentinelGuard: Event-Driven SOAR & Data Perimeter Lab](https://github.com/Pliauga/sentinel-guard)** | Production-grade cloud security lab modeling zero-trust data perimeter invariants, KMS envelope encryption, and automated Lambda SOAR remediation for credential leak containment. | Terraform · AWS · Python · LocalStack · Docker |
 | **[ONS BICS Analytics Pipeline](https://github.com/Pliauga/uk-macro-dbt-pipeline)** | End-to-end dbt & PostgreSQL pipeline analysing ONS survey data on UK business confidence, energy inflation, and labor costs. Includes automated schema tests and window function queries. | SQL · dbt · PostgreSQL · Python |
 | **[UK HM Land Registry Pipeline](https://github.com/Pliauga/hm-land-registry-dbt)** | Scalable dbt & PostgreSQL pipeline modeling UK HM Land Registry transaction data with dimensional modeling and automated data quality checks. | dbt · PostgreSQL · SQL |
@@ -34,4 +35,4 @@ I bring 4+ years of background across database administration, analytics enginee
 
 ---
 
-**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](mailto:EdPliauga@gmail.com)
+**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](https://www.google.com/search?q=mailto%3AEdPliauga%40gmail.com)
