@@ -35,4 +35,4 @@ I bring 4+ years of background across database administration, analytics enginee
 
 ---
 
-**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](https://www.google.com/search?q=mailto%3AEdPliauga%40gmail.com)
+**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](EdPliauga@gmail.com)
