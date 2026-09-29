@@ -1,23 +1,57 @@
-### Edgaras Pliauga
-**Cloud Security & DevSecOps Engineer** based in London, UK. 
+# Edgaras Pliauga
 
-Focusing on custom security automation, inline GenAI threat prevention, zero-trust IAM governance, and shifting security left into CI/CD pipelines.
+Cloud security and DevSecOps engineer in London. I build tooling around AWS, IAM, and LLM security, mostly in Go and Python.
 
-#### Core Tech
-* **Languages:** Go, Python, SQL, Bash
-* **Cloud & Infra:** AWS (IAM, Lambda, S3, KMS), Terraform, Docker, Floci, LocalStack
-* **Security & DevSecOps:** Zero Trust, Policy-as-Code, DLP, GenAI Guardrails, GitHub Actions CI/CD
-
-#### Featured Projects
-* **[Zvix](https://github.com/Pliauga/Zvix):** Inline GenAI security & DLP proxy written in zero-dependency Python on AWS Lambda.
-* **[LogZero](https://github.com/Pliauga/LogZero):** Off-network AWS IAM policy parser and wildcard security gate in Go.
 ---
 
-## What I'm Currently Focused On
+## Stack
 
-* **Cloud Security Architecture:** Designing multi-account preventive guardrails (AWS SCPs/RCPs), least-privilege IAM policies, and automated data exfiltration controls.
-* **Infrastructure-as-Code Security:** Building test-driven Terraform modules integrated with policy-as-code and automated compliance assertions.
-* **Community Engagement:** Connecting with London-based Cloud Security, DevSecOps, and Platform Engineering practitioners.
+**Languages:** Go, Python, Bash, SQL, HCL
+**Cloud:** AWS (IAM, Lambda, API Gateway, S3, SQS, KMS, CloudTrail), Terraform, Terragrunt
+**Infra:** Docker, Kubernetes, Helm, Minikube, EKS, Floci, LocalStack
+
 ---
 
-**Connect with me:** [LinkedIn](https://linkedin.com/in/edgaras-pliauga/) | [Email](mailto:EdPliauga@gmail.com)
+## Projects
+
+### halt.lab
+Event-driven AWS security scanner. Watches S3 uploads, flags credentials and risky binaries with Lambda, moves compromised objects into quarantine. Terragrunt for infra with separate dev (Floci) and prod (eu-west-2) configs. Helm chart for the app stack.
+
+Integration tests cover object tagging, quarantine, S3 TLS bucket policies, and SQS DLQ redrives.
+
+`Terragrunt` `Terraform` `AWS` `Helm` `Kubernetes`
+[Repo](https://github.com/Pliauga/halt.lab)
+
+### self-healing-k8s
+Three-tier self-healing Kubernetes cluster on Minikube + Floci, built with EKS parity in mind.
+
+`Kubernetes` `Minikube` `Floci` `EKS`
+[Repo](https://github.com/Pliauga/self-healing-k8s)
+
+### Zvix
+Security proxy and DLP layer for LLM inference. Sits inline on Lambda + API Gateway (Floci locally) in front of Ollama. Scans prompts on the way in for credential leaks and injection patterns, scans completions on the way out for secret exfiltration. Fails closed — any inspection error returns 500 rather than passing traffic through.
+
+Uses pre-compiled regex instead of an LLM judge. Under 1ms per request, no token cost, stdlib only, deployment artefact under 10KB.
+
+`Python` `Lambda` `API Gateway` `Ollama` `DLP`
+[Repo](https://github.com/Pliauga/Zvix)
+
+### LogZero
+*Work in progress.*
+
+Zero-egress CLI that reads AWS CloudTrail events (live or offline fixtures) and generates tightened least-privilege IAM policies, either as Terraform `aws_iam_policy_document` HCL or plain IAM JSON. Everything happens in memory locally. Deterministic output via HashiCorp's `hclwrite`. Works as a CLI or as an embedded Go library.
+
+`Go` `CloudTrail` `Terraform` `IAM` `hclwrite`
+[Repo](https://github.com/Pliauga/LogZero)
+
+### Onvlo
+Local FinOps engine for LLM workloads. Ingests traces into Postgres, models costs with dbt, uses Z-scores to catch runaway agent loops and spend anomalies, alerts to Slack. Has a dashboard script for viewing metrics.
+
+`Python` `PostgreSQL` `dbt` `Slack`
+[Repo](https://github.com/Pliauga/Onvlo)
+
+---
+
+## Contact
+
+[LinkedIn](https://linkedin.com/in/edgaras-pliauga/) · [EdPliauga@gmail.com](mailto:EdPliauga@gmail.com)
