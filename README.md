@@ -23,13 +23,15 @@ Integration tests cover object tagging, quarantine, S3 TLS bucket policies, and 
 [Repo](https://github.com/Pliauga/halt.lab)
 
 ### self-healing-k8s
-Three-tier self-healing Kubernetes cluster on Minikube + Floci, built with EKS parity in mind.
+Reference implementation of a Kubernetes cluster that repairs its own failures. Runs on Minikube, designed to move to EKS with Terraform. Three replicas behind a PDB, HPA from 3 to 10, and chaos scenarios that inject real faults: pod eviction, readiness/liveness cascades, CPU load, bad rollouts, node drains.
 
-`Kubernetes` `Minikube` `Floci` `EKS`
+The design is layered on purpose. Most healing needs no agent at all. Probes and controllers cover the common cases in seconds; an optional agent handles only what they cannot express. Pod replacement goes through the eviction API, never a direct delete, so the PDB is enforced by the API server rather than by convention. `make validate` catches cross-manifest errors that schema validation misses. The Tier 2 agent and the EKS path are on the roadmap.
+
+`Kubernetes` `Minikube` `EKS` `Terraform` `Prometheus`
 [Repo](https://github.com/Pliauga/self-healing-k8s)
 
 ### Zvix
-Security proxy and DLP layer for LLM inference. Sits inline on Lambda + API Gateway (Floci locally) in front of Ollama. Scans prompts on the way in for credential leaks and injection patterns, scans completions on the way out for secret exfiltration. Fails closed — any inspection error returns 500 rather than passing traffic through.
+Security proxy and DLP layer for LLM inference. Sits inline on Lambda + API Gateway (Floci locally) in front of Ollama. Scans prompts on the way in for credential leaks and injection patterns, scans completions on the way out for secret exfiltration. Fails closed: any inspection error returns 500 rather than passing traffic through.
 
 Uses pre-compiled regex instead of an LLM judge. Under 1ms per request, no token cost, stdlib only, deployment artefact under 10KB.
 
@@ -54,4 +56,4 @@ Local FinOps engine for LLM workloads. Ingests traces into Postgres, models cost
 
 ## Contact
 
-[LinkedIn](https://linkedin.com/in/edgaras-pliauga/) · [EdPliauga@gmail.com](mailto:EdPliauga@gmail.com)
+[LinkedIn](https://linkedin.com/in/pliauga/) · [EdPliauga@gmail.com](mailto:EdPliauga@gmail.com)
