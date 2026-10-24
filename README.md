@@ -6,13 +6,22 @@ Cloud security and DevSecOps engineer in London. I build tooling around AWS, IAM
 
 ## Stack
 
-**Languages:** Go, Python, Bash, SQL, HCL
+**Languages:** Go, Python, Bash, SQL, HCL, TypeScript
 **Cloud:** AWS (IAM, Lambda, API Gateway, S3, SQS, KMS, CloudTrail), Terraform, Terragrunt
 **Infra:** Docker, Kubernetes, Helm, Minikube, EKS, Floci, LocalStack
+**Frontend/Web:** SvelteKit, Tailwind CSS, Three.js, WebAssembly
 
 ---
 
 ## Projects
+
+### Silicon Path
+Local-first C and computer-systems learning platform built to help classmates through CST1500. Designed to reduce the barrier to learning for neurodivergent students, it runs entirely on localhost with zero API keys or network requests. 
+
+Features a browser-based C compiler using Emception (Clang compiled to WebAssembly), four interactive 3D visualizers for architecture concepts, and MDX-based lab worksheets. Uses Svelte 5 and GSAP for the UI and scroll timelines.
+
+`SvelteKit` `TypeScript` `WebAssembly` `Three.js` `Tailwind`
+[Repo](https://github.com/Pliauga/silicon-path)
 
 ### halt.lab
 Event-driven AWS security scanner. Watches S3 uploads, flags credentials and risky binaries with Lambda, moves compromised objects into quarantine. Terragrunt for infra with separate dev (Floci) and prod (eu-west-2) configs. Helm chart for the app stack.
