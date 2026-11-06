@@ -1,19 +1,24 @@
 # Edgaras Pliauga
 
-Cloud security and DevSecOps engineer in London. I build tooling around AWS, IAM, and LLM security, mostly in Go and Python.
+**Epistemic Systems Architect & Cloud Security Engineer** in London. I build autonomous agentic harnesses, AWS tooling, and LLM security infrastructure, mostly in Go and Python. 
+
+My focus is on structural integrity: building systems that force AI models to verify their own claims, and proving where industry-standard tools fail.
 
 ---
 
-## Stack
+## Flagship Research & Tooling
 
-**Languages:** Go, Python, Bash, SQL, HCL, TypeScript
-**Cloud:** AWS (IAM, Lambda, API Gateway, S3, SQS, KMS, CloudTrail), Terraform, Terragrunt
-**Infra:** Docker, Kubernetes, Helm, Minikube, EKS, Floci, LocalStack
-**Frontend/Web:** SvelteKit, Tailwind CSS, Three.js, WebAssembly
+### IAM-Chain-Breaker
+Autonomous agentic harness for multi-hop AWS IAM privilege escalation. Demonstrates that static AST scanners (Checkov, Trivy) are structurally blind to multi-hop logic, missing >90% of resource-scoped escalation chains. 
+
+The harness models graph reachability, synthesizes least-privilege Permission Boundaries, and validates containment via live wire-execution. Achieved **295/295** parity with live AWS `iam:SimulateCustomPolicy`, blocked 3/3 live wire exploits with zero collateral damage (10,459 decision matrix), and discovered a novel 5.8s post-remediation IAM propagation window. The system ran autonomously for 13 hours on an unmodified DeepSeek model via a strict text-based orchestration harness, achieving zero hallucinations.
+
+`Python` `AWS` `IAM` `Checkov` `Trivy` `Terraform` `Agentic Workflows`
+[Whitepaper & Evidence Logs](https://github.com/Pliauga/IAM-chain-breaker)
 
 ---
 
-## Projects
+## Other Projects
 
 ### Silicon Path
 Local-first C and computer-systems learning platform built to help classmates through CST1500. Designed to reduce the barrier to learning for neurodivergent students, it runs entirely on localhost with zero API keys or network requests. 
@@ -60,6 +65,15 @@ Local FinOps engine for LLM workloads. Ingests traces into Postgres, models cost
 
 `Python` `PostgreSQL` `dbt` `Slack`
 [Repo](https://github.com/Pliauga/Onvlo)
+
+---
+
+## Stack
+
+**Languages:** Go, Python, Bash, SQL, HCL, TypeScript
+**Cloud & AI Security:** AWS (IAM, Lambda, API Gateway, S3, SQS, KMS, CloudTrail), Terraform, Terragrunt, LLM Sandboxing, DLP, Agentic Orchestration
+**Infra:** Docker, Kubernetes, Helm, Minikube, EKS, Floci, LocalStack
+**Frontend/Web:** SvelteKit, Tailwind CSS, Three.js, WebAssembly
 
 ---
 
