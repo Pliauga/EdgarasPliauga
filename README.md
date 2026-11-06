@@ -53,7 +53,6 @@ Uses pre-compiled regex instead of an LLM judge. Under 1ms per request, no token
 [Repo](https://github.com/Pliauga/Zvix)
 
 ### LogZero
-*Work in progress.*
 
 Zero-egress CLI that reads AWS CloudTrail events (live or offline fixtures) and generates tightened least-privilege IAM policies, either as Terraform `aws_iam_policy_document` HCL or plain IAM JSON. Everything happens in memory locally. Deterministic output via HashiCorp's `hclwrite`. Works as a CLI or as an embedded Go library.
 
