@@ -20,13 +20,13 @@ The harness models graph reachability, synthesizes least-privilege Permission Bo
 
 ## Other Projects
 
-### Silicon Path
-Local-first C and computer-systems learning platform built to help classmates through CST1500. Designed to reduce the barrier to learning for neurodivergent students, it runs entirely on localhost with zero API keys or network requests. 
+### Studio-Py
+Browser-based Python curriculum for developers who have shipped software but never written Python. 25 modules of runnable code, 24 weeks of structured progression, running entirely client-side.
 
-Features a browser-based C compiler using Emception (Clang compiled to WebAssembly), four interactive 3D visualizers for architecture concepts, and MDX-based lab worksheets. Uses Svelte 5 and GSAP for the UI and scroll timelines.
+The runtime is Pyodide (WASM) inside a Web Worker, so every module executes locally with no backend. Terminal output is reactive: it drives halftone density on the module poster. Progress is rendered as an 8-bit snake spine from sliced pixel sprites, and data-structure concepts are explored through 3D sandboxes built with Threlte + Rapier.
 
-`SvelteKit` `TypeScript` `WebAssembly` `Three.js` `Tailwind`
-[Repo](https://github.com/Pliauga/silicon-path)
+`SvelteKit 5` `Pyodide` `WebAssembly` `Three.js` `Threlte` `Rapier`
+[Repo](https://github.com/Pliauga/Studio-Py)
 
 ### halt.lab
 Event-driven AWS security scanner. Watches S3 uploads, flags credentials and risky binaries with Lambda, moves compromised objects into quarantine. Terragrunt for infra with separate dev (Floci) and prod (eu-west-2) configs. Helm chart for the app stack.
